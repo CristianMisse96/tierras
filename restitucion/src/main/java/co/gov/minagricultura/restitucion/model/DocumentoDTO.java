@@ -1,9 +1,11 @@
 package co.gov.minagricultura.restitucion.model;
 
 public class DocumentoDTO {
-    private Long id;
+   
+	private Long id;
     private String tipo;
     private String nombreArchivo;
+    private String rutaArchivo;
     private byte[] archivo;
 
     public Long getId() {
@@ -37,4 +39,13 @@ public class DocumentoDTO {
     public void setArchivo(byte[] archivo) {
         this.archivo = archivo;
     }
+    
+    public String getRutaArchivo() {
+		return rutaArchivo;
+	}
+
+	public void setRutaArchivo(String rutaArchivo) {
+		this.rutaArchivo = rutaArchivo;
+	}
+
 }
